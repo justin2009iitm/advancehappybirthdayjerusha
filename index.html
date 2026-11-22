@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Happy Birthday S Jerusha Cathrine 🎂</title>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&family=Noto+Sans+Tamil:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#fff1f8;--pink:#ff5fa8;--gold:#ffc857;--glass:#ffffff1c;--line:#ffffff30;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;min-height:100vh;color:var(--ink);font-family:'Poppins','Noto Sans Tamil',system-ui,sans-serif;text-align:center;overflow-x:hidden;
+background:radial-gradient(ellipse at 20% 10%,#5b1d6e 0,transparent 55%),radial-gradient(ellipse at 85% 80%,#7a1b4b 0,transparent 55%),linear-gradient(180deg,#12061f,#1d0a2e 60%,#2a0d34);}
+canvas{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:1}
+#lock,#main{position:relative;z-index:2}
+.script{font-family:'Great Vibes',cursive}
+.shine{background:linear-gradient(90deg,#ff9ccf,#ffe08a,#ff5fa8,#ffe08a,#ff9ccf);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hide{display:none!important}
+/* lock */
+#lock{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:20px}
+.gift{font-size:4rem;animation:bob 2.4s ease-in-out infinite;}
+@keyframes bob{50%{transform:translateY(-14px) rotate(-5deg)}}
+#lock h1{font-size:clamp(2.6rem,10vw,4.6rem);margin:.2em 0 0}
+#lock p{opacity:.85;max-width:420px;font-weight:300}
+.cd{display:flex;gap:12px;margin-top:22px}
+.cd div{background:var(--glass);border:1px solid var(--line);border-radius:18px;padding:14px 10px;min-width:78px;}
+.cd b{display:block;font-size:2.2rem;font-weight:600;}
+.cd span{font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;opacity:.7}
+/* main */
+.hero{padding:40px 16px 20px;max-width:760px;margin:auto}
+.hb{font-size:clamp(3.2rem,13vw,6rem);margin:0;line-height:1;opacity:0;animation:pop 1.2s .2s forwards cubic-bezier(.2,1.6,.4,1)}
+.nm{font-size:clamp(2rem,9vw,3.8rem);margin:.1em 0;opacity:0;animation:pop 1.2s .7s forwards cubic-bezier(.2,1.6,.4,1)}
+@keyframes pop{from{opacity:0;transform:scale(.3) translateY(30px)}to{opacity:1;transform:none}}
+.stage{position:relative;width:min(340px,86vw);margin:10px auto 0}
+.glow{position:absolute;left:50%;top:6%;width:120%;aspect-ratio:1;transform:translateX(-50%);background:radial-gradient(circle,#ffb34766,transparent 62%);transition:opacity 1.2s;pointer-events:none}
+.out .glow{opacity:0}
+svg{width:100%;height:auto;display:block;overflow:visible;position:relative}
+.flame{transform-box:fill-box;transform-origin:50% 100%;animation:fk .22s ease-in-out infinite alternate;transition:opacity .35s;will-change:transform}
+.flame:nth-of-type(2){animation-delay:.07s}.flame:nth-of-type(3){animation-delay:.14s}
+@keyframes fk{from{transform:scale(1,1) rotate(-3deg)}to{transform:scale(.88,1.12) rotate(4deg)}}
+.out .flame{opacity:0}
+.smoke{opacity:0}
+.out .smoke{animation:sm 2.2s ease-out forwards}
+@keyframes sm{0%{opacity:.7;transform:translateY(0)}100%{opacity:0;transform:translateY(-60px) scale(1.8)}}
+#hint{margin:12px 0;font-weight:300;letter-spacing:.04em}
+button{font:600 1.05rem 'Poppins',sans-serif;color:#fff;border:0;border-radius:40px;padding:14px 32px;cursor:pointer;background:linear-gradient(135deg,#ff5fa8,#c94bff);box-shadow:0 0 28px #ff5fa899,inset 0 1px #fff6;}
+#wishSec{max-width:700px;margin:auto;padding:50px 16px 10px}
+#wishSec h2{font-size:clamp(2.4rem,9vw,3.6rem);margin:0 0 18px}
+.wishes{display:grid;gap:16px}
+.w{background:var(--glass);border:1px solid var(--line);border-radius:22px;padding:20px 22px;text-align:left;opacity:0;transform:translateY(40px) scale(.95);transition:all .9s cubic-bezier(.2,1.2,.4,1);line-height:1.6}
+.w.show{opacity:1;transform:none}
+.w i{font-style:normal;font-size:1.5rem;margin-right:8px}
+.verse{text-align:center;padding:26px 22px;border-color:#ffc85788}
+.verse .q{font-size:2.2rem;line-height:1;color:var(--gold)}
+.verse .ta{font-size:1.1rem;line-height:1.9;margin:6px 0 14px;font-weight:600}
+.verse .en{font-size:1rem;line-height:1.7;font-weight:300;font-style:italic;opacity:.95}
+.verse .ref{margin-top:14px;font-size:.85rem;letter-spacing:.08em;color:var(--gold)}
+footer{position:relative;z-index:2;padding:34px 12px 44px;font-size:.9rem;opacity:.85;letter-spacing:.05em}
+footer b{color:var(--gold)}
+</style>
+</head>
+<body>
+<canvas id="bg" style="z-index:0"></canvas><canvas id="cv"></canvas>
+
+<div id="lock">
+  <div class="gift">🎁</div>
+  <h1 class="script shine">Something special…</h1>
+  <p>S Jerusha Cathrine ku oru surprise! Midnight 12:00 AM ku open aagum 💖</p>
+  <div class="cd">
+    <div><b id="h">00</b><span>Hours</span></div>
+    <div><b id="m">00</b><span>Min</span></div>
+    <div><b id="s">00</b><span>Sec</span></div>
+  </div>
+</div>
+
+<main id="main" class="hide">
+  <section class="hero">
+    <h1 class="hb script shine">Happy Birthday</h1>
+    <div class="nm script shine">S Jerusha Cathrine</div>
+    <p style="margin:0 0 6px;font-weight:300;letter-spacing:.06em;color:var(--gold)">To my lovely sister 💖</p>
+    <div class="stage" id="stage">
+      <div class="glow"></div>
+      <svg viewBox="0 0 300 300" aria-label="Birthday cake">
+        <defs>
+          <linearGradient id="gc" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#5a2a18"/><stop offset=".5" stop-color="#9a5a36"/><stop offset="1" stop-color="#4a2113"/></linearGradient>
+          <linearGradient id="gp" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e8458f"/><stop offset=".5" stop-color="#ff8cc2"/><stop offset="1" stop-color="#d03a80"/></linearGradient>
+          <linearGradient id="gw" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#f3d9e6"/><stop offset=".5" stop-color="#fff"/><stop offset="1" stop-color="#e8c8da"/></linearGradient>
+          <radialGradient id="gf" cx=".5" cy=".75" r=".6"><stop offset="0" stop-color="#fff"/><stop offset=".35" stop-color="#ffe27a"/><stop offset="1" stop-color="#ff7a18"/></radialGradient>
+        </defs>
+        <g class="cake">
+          <ellipse cx="150" cy="276" rx="140" ry="16" fill="#000" opacity=".35"/>
+          <ellipse cx="150" cy="268" rx="138" ry="16" fill="#e9dff0"/>
+          <rect x="30" y="205" width="240" height="62" rx="12" fill="url(#gc)"/>
+          <path d="M30 215q14 22 28 0t30 0 30 0 30 0 30 0 30 0 30 0 32 0v-10H30z" fill="#fff"/>
+          <rect x="62" y="148" width="176" height="58" rx="12" fill="url(#gp)"/>
+          <path d="M62 158q12 20 25 0t25 0 25 0 25 0 25 0 25 0 14 0v-10H62z" fill="#fff"/>
+          <rect x="95" y="96" width="110" height="53" rx="12" fill="url(#gw)"/>
+          <path d="M95 106q11 18 22 0t22 0 22 0 22 0 22 0v-10H95z" fill="#ff8cc2"/>
+          <g fill="#ffc857"><circle cx="55" cy="240" r="3.5"/><circle cx="90" cy="236" r="3.5"/><circle cx="130" cy="242" r="3.5"/><circle cx="170" cy="238" r="3.5"/><circle cx="210" cy="243" r="3.5"/><circle cx="245" cy="237" r="3.5"/></g>
+          <g fill="#ff3b6b"><circle cx="110" cy="92" r="6"/><circle cx="190" cy="92" r="6"/></g>
+          <g>
+            <rect x="124" y="58" width="9" height="40" rx="3" fill="#8fd3ff"/><rect x="146" y="52" width="9" height="46" rx="3" fill="#ffd1e6"/><rect x="168" y="58" width="9" height="40" rx="3" fill="#c9a6ff"/>
+            <g class="smoke"><circle cx="128" cy="45" r="6" fill="#ccc"/><circle cx="150" cy="38" r="6" fill="#ccc"/><circle cx="172" cy="45" r="6" fill="#ccc"/></g>
+            <path class="flame" d="M128.5 54c-7-8-4-15 0-24 4 9 7 16 0 24z" fill="url(#gf)"/>
+            <path class="flame" d="M150.5 48c-7-8-4-15 0-24 4 9 7 16 0 24z" fill="url(#gf)"/>
+            <path class="flame" d="M172.5 54c-7-8-4-15 0-24 4 9 7 16 0 24z" fill="url(#gf)"/>
+          </g>
+        </g>
+      </svg>
+    </div>
+    <p id="hint">Wish panni candles ah oothu 🕯️</p>
+    <button id="blow">Blow the candles 🎂</button>
+  </section>
+
+  <section id="wishSec" class="hide">
+    <h2 class="script shine">Wishes for you</h2>
+    <div class="wishes">
+      <div class="w"><i>🎂</i>Happy Birthday Jerusha! Un life la ellaa happiness um un kitta vandhu serattum.</div>
+      <div class="w"><i>🌸</i>Nee epavum sirichute irukanum, adhu dhan enakku romba pidikkum.</div>
+      <div class="w"><i>🌟</i>Un kanavu ellam nanavaganum. God bless you always, S Jerusha Cathrine!</div>
+      <div class="w"><i>💖</i>Best sister nu solla vaartha illa. Happy Birthday, my dear sister!</div>
+      <div class="w"><i>🍰</i>Indha year full ah joy, success, and treats ah irukkattum!</div>
+      <div class="w verse">
+        <div class="q">✝</div>
+        <div class="ta">நீங்கள் எதிர்பார்த்திருக்கும் முடிவை உங்களுக்குக் கொடுக்கும்படிக்கு நான் உங்கள்பேரில் நினைத்திருக்கிற நினைவுகளை அறிவேன் என்று கர்த்தர் சொல்லுகிறார்; அவைகள் தீமைக்கல்ல, சமாதானத்துக்கேதுவான நினைவுகளே.</div>
+        <div class="en">“For I know the thoughts that I think toward you, saith the LORD, thoughts of peace, and not of evil, to give you an expected end.”</div>
+        <div class="ref">எரேமியா 29:11 &nbsp;•&nbsp; Jeremiah 29:11</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>Design And Developed By <b>Justin Jackson</b></footer>
+</main>
+
+<script>
+// Unlock: 23 Nov 2026, 12:00 AM (viewer's local time). Add #preview to the link to test early.
+var target=new Date(2026,10,23,0,0,0).getTime(), preview=location.hash==='#preview', opened=false;
+var cv=document.getElementById('cv'),cx=cv.getContext('2d'),bg=document.getElementById('bg'),bx=bg.getContext('2d'),W,H,running=false;
+function size(){W=innerWidth;H=innerHeight;cv.width=bg.width=W;cv.height=bg.height=H;
+  bx.clearRect(0,0,W,H);bx.fillStyle='#fff';
+  for(var i=0;i<70;i++){bx.globalAlpha=Math.random()*.7+.2;bx.beginPath();bx.arc(Math.random()*W,Math.random()*H,Math.random()*1.3+.3,0,6.3);bx.fill()}}
+size();addEventListener('resize',size);
+var parts=[],conf=[],cols=['#ff5fa8','#ffc857','#8fd3ff','#c9a6ff','#7dffb2','#ffffff'];
+function firework(x,y){var c=cols[Math.random()*6|0],n=36;
+  for(var k=0;k<n;k++){var a=6.283*k/n,v=Math.random()*3+1.5;parts.push({x:x,y:y,vx:Math.cos(a)*v,vy:Math.sin(a)*v,l:1,c:c})}start()}
+function confetti(){for(var k=0;k<60;k++)conf.push({x:Math.random()*W,y:-20-Math.random()*H*.4,vx:Math.random()*2-1,vy:Math.random()*2.5+2,c:cols[Math.random()*6|0],z:Math.random()*5+4});start()}
+function show(){for(var k=0;k<4;k++)setTimeout(function(){firework(W*(.15+Math.random()*.7),H*(.12+Math.random()*.35))},k*400);confetti()}
+function start(){if(!running){running=true;requestAnimationFrame(frame)}}
+function frame(){
+  cx.clearRect(0,0,W,H);
+  parts=parts.filter(function(p){p.x+=p.vx;p.y+=p.vy;p.vy+=.06;p.vx*=.98;p.l-=.014;if(p.l<=0)return false;
+    cx.globalAlpha=p.l;cx.fillStyle=p.c;cx.fillRect(p.x,p.y,3,3);return true});
+  cx.globalAlpha=1;
+  conf=conf.filter(function(p){p.x+=p.vx;p.y+=p.vy;if(p.y>H+10)return false;cx.fillStyle=p.c;cx.fillRect(p.x,p.y,p.z,p.z*.6);return true});
+  if(parts.length||conf.length)requestAnimationFrame(frame);else{running=false;cx.clearRect(0,0,W,H)}
+}
+function pad(n){return String(n).padStart(2,'0')}
+function tick(){
+  var d=target-Date.now();
+  if(d<=0||preview){if(!opened)openIt();return}
+  h.textContent=pad(Math.floor(d/36e5));m.textContent=pad(Math.floor(d/6e4)%60);s.textContent=pad(Math.floor(d/1e3)%60);
+}
+function openIt(){opened=true;lock.classList.add('hide');main.classList.remove('hide');show()}
+blow.onclick=function(){
+  stage.classList.add('out');hint.textContent='Yaaay! Un wish nanavaganum 🎉';this.classList.add('hide');show();
+  wishSec.classList.remove('hide');
+  setTimeout(function(){wishSec.scrollIntoView({behavior:'smooth'})},1000);
+  document.querySelectorAll('.w').forEach(function(w,k){setTimeout(function(){w.classList.add('show')},900+k*800)});
+};
+var lt=0;addEventListener('pointerdown',function(e){var n=Date.now();if(opened&&n-lt>400){lt=n;firework(e.clientX,e.clientY)}});
+tick();setInterval(tick,1000);
+</script>
+</body>
+</html>
